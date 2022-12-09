@@ -13,15 +13,15 @@ if (num > 9999 && num < 100000)
 {
     if (i == j && k == n)
     {
-        Console.WriteLine("Это число палиндром");
+        Console.WriteLine("Ура! Это число палиндром! :)");
     }
     else
     {
-        Console.WriteLine("Это число не палиндром");
+        Console.WriteLine("К сожалению, это число не палиндром... :(");
     }
 }
 else
 {
-    Console.WriteLine("Это не пятизначное число");
+    Console.WriteLine("Это не пятизначное число! Введите пятизначное число.");
 }
 

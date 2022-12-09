@@ -3,13 +3,11 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("Для вывода таблицы кубов чисел от 1 до введенного числа введите число: ");
+Console.WriteLine("Для вывода таблицы кубов чисел от 1 до введенного числа, введите число: ");
 int n = int.Parse(Console.ReadLine()!);
 
 for(int i = 1; i <= n; i++)
 {
-    if(i!=0)
-    {int sum = i*i*i;
-    Console.Write(" " + sum);}
-    else Console.Write("0");
+   int res = i*i*i;
+   Console.Write("  " + res);
 }

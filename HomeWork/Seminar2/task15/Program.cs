@@ -3,7 +3,7 @@
 
 Console.WriteLine("Введите цифру обозначающую день недели (от единицы до семи): ");
 int num = int.Parse(Console.ReadLine()!);
-if (num >= 1 & num < 8) 
+if (num >= 1 && num < 8) 
 {
     if (num == 6) Console.WriteLine("Этот день суббота, выходной");
     if (num == 7) Console.WriteLine("Этот день воскресенье, выходной");

@@ -9,5 +9,9 @@ int n = int.Parse(Console.ReadLine()!);
 for(int i = 1; i <= n; i++)
 {
    int res = i*i*i;
-   Console.Write("  " + res);
+   if(i < n)
+   {
+      Console.Write($" {res},");
+   }
+   else Console.Write($" {res}.");
 }

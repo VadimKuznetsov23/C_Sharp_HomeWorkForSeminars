@@ -31,11 +31,3 @@ int result = 0;
     }
 return result;
 }
-
-
-
-
-        result = (a / c) % 10;
-    }
-return result;
-}

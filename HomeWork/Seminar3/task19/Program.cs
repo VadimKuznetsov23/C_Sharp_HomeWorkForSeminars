@@ -5,22 +5,22 @@
 
 Console.WriteLine("Введите пятизначное число: ");
 int num = int.Parse(Console.ReadLine()!);
-int i = num/10000;
-int j = num%10;
-int k = num/1000%10;
-int n = num/10%10;
+int i = num / 10000;
+int j = num % 10;
+int k = num / 1000 % 10;
+int n = num / 10 % 10;
 if (num > 9999 && num < 100000)
 {
-    if (i==j && k==n)
+    if (i == j && k == n)
     {
-    Console.WriteLine("Это число палиндром");
+        Console.WriteLine("Это число палиндром");
     }
-        else 
-        {
-            Console.WriteLine("Это число не палиндром");
-        }
+    else
+    {
+        Console.WriteLine("Это число не палиндром");
+    }
 }
-else 
+else
 {
     Console.WriteLine("Это не пятизначное число");
 }

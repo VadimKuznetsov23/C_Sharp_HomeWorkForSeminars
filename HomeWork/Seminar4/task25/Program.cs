@@ -6,6 +6,7 @@
 int NumA = ReadInt("Введите число А: ");
 int NumB = ReadInt("Введите число B: ");
 TaskSolution(NumA, NumB);
+
 int ReadInt(string message)
 {
     Console.WriteLine(message);

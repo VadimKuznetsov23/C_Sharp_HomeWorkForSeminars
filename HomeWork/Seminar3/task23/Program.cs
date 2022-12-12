@@ -4,11 +4,11 @@
 // 5 -> 1, 8, 27, 64, 125
 
 Console.WriteLine("Для вывода таблицы кубов чисел от 1 до введенного числа, введите число: ");
-int n = int.Parse(Console.ReadLine()!);
+int n = Convert.ToInt16(Console.ReadLine()!);
 
 for(int i = 1; i <= n; i++)
 {
-   int res = i*i*i;
+   double res = Math.Pow(i, 3); 
    if(i < n)
    {
       Console.Write($" {res},");

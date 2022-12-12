@@ -10,7 +10,7 @@ TaskSolution(NumA, NumB);
 int ReadInt(string message)
 {
     Console.WriteLine(message);
-    return Convert.ToInt16(Console.ReadLine());
+    return Convert.ToInt32(Console.ReadLine());
 }
 void TaskSolution(int a, int b)
 {

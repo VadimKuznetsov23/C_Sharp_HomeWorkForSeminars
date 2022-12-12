@@ -13,7 +13,7 @@ int z2 = Coordinate("z", "B");
 int Coordinate(string coorName, string pointName)
 {
     Console.Write($"Введите координату {coorName} точки {pointName}: ");
-    return Convert.ToInt16(Console.ReadLine());
+    return Convert.ToInt32(Console.ReadLine());
 }
 double TaskSolution(double x1, double x2, double y1, double y2, double z1, double z2)
 {

@@ -3,13 +3,13 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-int NumA = ReadInt("Введите число А: ");
-int NumB = ReadInt("Введите число B: ");
+int NumA = ReadInt("A");
+int NumB = ReadInt("B");
 TaskSolution(NumA, NumB);
 
-int ReadInt(string message)
+int ReadInt(string numName)
 {
-    Console.WriteLine(message);
+    Console.WriteLine($"Введите число {numName}: ");
     return Convert.ToInt32(Console.ReadLine());
 }
 void TaskSolution(int a, int b)

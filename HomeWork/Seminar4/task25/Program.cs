@@ -15,9 +15,13 @@ int ReadInt(string numName)
 void TaskSolution(int a, int b)
 {
     int res = 1;
-    for (int i = 1; i<=b; i++)
+    if(a>0)
     {
-    res = res * a;
-    }
+        for (int i = 1; i<=b; i++)
+        {
+        res = res * a;
+        }
     Console.WriteLine($"Результат возведения числа {NumA} в степень числа {NumB}, будет равен: " + res);
+    }
+    else Console.WriteLine($"Результат возведения числа {NumA} в степень числа {NumB}, будет равен: 0");
 }

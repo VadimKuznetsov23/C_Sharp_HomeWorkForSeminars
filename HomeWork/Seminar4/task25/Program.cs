@@ -15,7 +15,7 @@ int ReadInt(string numName)
 void TaskSolution(int a, int b)
 {
     int res = 1;
-    if(a>0)
+    if(a > 0)
     {
         for (int i = 1; i<=b; i++)
         {

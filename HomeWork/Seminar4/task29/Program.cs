@@ -21,5 +21,5 @@ void PrintArray(int[] arr)
     }
      Console.Write("]");
 }
-int [] newArray = GetArray(8, 1, 8);
+int [] newArray = GetArray(8, 1, 100);
 PrintArray(newArray);

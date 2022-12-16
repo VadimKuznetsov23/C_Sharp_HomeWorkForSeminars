@@ -29,7 +29,7 @@ void PrintArray(int[] arr)
     }
     Console.WriteLine();
 }
-int GetSum(int[] newarr) // Выводит сумму элементов на нечетных позицих
+int GetSum(int[] newarr) // Выводит сумму элементов на нечетных позициях
 {
     int sum = 0;
     for(int index = 1; index < newarr.Length;)

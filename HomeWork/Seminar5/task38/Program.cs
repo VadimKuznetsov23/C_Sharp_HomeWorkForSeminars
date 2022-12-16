@@ -4,7 +4,7 @@
 int[] newArray = GetArray(10, 1, 99);
 PrintArray(newArray);
 PrintMAxMin(newArray);
-Console.WriteLine($"Разница между максимальным и минимальным элементом массива равна: {GetDif(newArray)}");
+Console.WriteLine($"Разница между максимальным и минимальным элементом массива -> {GetDif(newArray)}");
 
 int[] GetArray (int size, int minNum, int maxNum)
 {

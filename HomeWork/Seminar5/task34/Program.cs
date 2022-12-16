@@ -25,9 +25,8 @@ void PrintArray(int[] newarr)
         {
             Console.Write($"{newarr[i]}, ");
         }
-        else Console.Write($"{newarr[i]}");
+        else Console.Write($"{newarr[i]}]");
     }
-    Console.Write("]");
     Console.WriteLine();
 }
 int GetCount(int[] res) //Метод производит подсчет четных чисел в массиве

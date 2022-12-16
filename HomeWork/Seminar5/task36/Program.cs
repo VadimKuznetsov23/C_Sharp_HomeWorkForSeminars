@@ -3,8 +3,10 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-int[] newArray = GetArray(10, 1, 999);
+int[] newArray = GetArray(10, -99, 99);
 PrintArray(newArray);
+Console.WriteLine($"Сумма чисел, стоящих на нечетных позициях равна: {GetSum(newArray)}");
+
 int[] GetArray(int size, int miNum, int maxNum)
 {
     int[] res = new int[size];
@@ -25,4 +27,15 @@ void PrintArray(int[] arr)
         }
         else Console.Write($"{arr[i]}]");
     }
+    Console.WriteLine();
+}
+int GetSum(int[] newarr)
+{
+    int sum = 0;
+    for(int index = 1; index < newarr.Length;)
+    {
+        sum = sum + newarr[index];
+        index = index + 2;
+    }
+    return sum;
 }

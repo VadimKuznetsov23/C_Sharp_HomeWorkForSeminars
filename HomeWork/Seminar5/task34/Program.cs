@@ -33,7 +33,7 @@ void PrintArray(int[] newarr)
 int GetCount(int[] res) //Метод производит подсчет четных чисел в массиве
 {
     int count = 0;
-    for (int i = 0; i < res.Length; i++)
+    for (int i = 0; i <= res.Length; i++)
     {
         if(res[i] % 2 == 0)
         {

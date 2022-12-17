@@ -3,18 +3,19 @@
 // значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-//x в уравнениях y = k1 * x + b1, y = k2 * x + b2; будем искать системой уравнений: 
+//Описание решения:
+//x в уравнениях y = k1 * x + b1; y = k2 * x + b2 будем искать системой уравнений: 
 //y-y=k1*x+b1-(k2*x+b2) = k1*x-k2*x-(-b1+b2) = (k1-k2)*x-(-b1+b2);
 //(k1-k2)*x-(-b1+b2)=0; 
 //(k1-k2)*x=(-b1+b2); 
 //x=(-b1+b2)/(k1-k2);
 
-double ReadInput(string numName)
+double ReadInput(string numName)// Метод предлагает ввести значения и принимает их
 {
     Console.Write($"Введите заначение {numName}: ");
     return Convert.ToDouble(Console.ReadLine());
 }
-void GetDotCross(double q1, double z1, double q2, double z2) // Метод находит х и выводит точку пересечения.
+void GetDotCross(double q1, double z1, double q2, double z2) // Метод находит Х и выводит координаты точки пересечения.
 {
     double x = (-q1+q2)/(z1-z2);
     double crosCor1 = z1*x+q1;

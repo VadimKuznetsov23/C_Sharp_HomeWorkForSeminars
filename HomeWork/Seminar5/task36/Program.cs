@@ -32,10 +32,10 @@ void PrintArray(int[] arr)
 int GetSum(int[] newarr) // Выводит сумму элементов на нечетных позициях
 {
     int sum = 0;
-    for(int index = 1; index < newarr.Length;)
+    for(int index = 1; index < newarr.Length; index = index + 2)
     {
         sum = sum + newarr[index];
-        index = index + 2;
+        
     }
     return sum;
 }

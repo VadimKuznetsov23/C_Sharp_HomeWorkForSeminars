@@ -18,9 +18,8 @@ double ReadInput(string numName)// Метод предлагает ввести 
 void GetDotCross(double q1, double z1, double q2, double z2) // Метод находит Х и выводит координаты точки пересечения.
 {
     double x = (-q1+q2)/(z1-z2);
-    double crosCor1 = z1*x+q1;
-    double crosCor2 = z2*x+q2;
-    Console.Write($"Точка пересечения прямых имеет координаты:({crosCor1}; {crosCor2})");
+    double y = z1*x+q1;
+    Console.Write($"Точка пересечения прямых имеет координаты:({x}; {y})");
 }
 
 double b1 = ReadInput("b1");

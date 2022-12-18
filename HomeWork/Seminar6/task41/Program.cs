@@ -8,12 +8,12 @@ string numbers = Console.ReadLine()!;
 GetSum(numbers);
 
 void GetSum(string message)
-{
-    string[] getNumbers = new string[message.Length];
-    int z = 0;
-    for (int i = 0; i < getNumbers.Length; i++)
-    {
-        if (message[i] == ',')
+{                                                      // Метод выполняет следующее:
+    string[] getNumbers = new string[message.Length]; // 1.получает размер массива, содержащего только введенные числа (без запятых и пробелов),
+    int z = 0;                                        // создает строковый массив и заполняет его введенными числами   
+    for (int i = 0; i < getNumbers.Length; i++)       // 2. конвертирует строковые значения в целочисленные 
+    {                                                 // и выводит целочисленный массив с введенными числами
+        if (message[i] == ',')                        // 3. подсчитывает и выводит сумму положительных чисел в полученном целочисленном массиве
         {
             z++;
         }

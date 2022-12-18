@@ -10,7 +10,7 @@
 //(k1-k2)*x=(-b1+b2); 
 //x=(-b1+b2)/(k1-k2);
 
-double ReadInput(string numName)// Метод предлагает ввести значения и принимает их
+double ReadInput(string numName)// Метод предлагает ввести значения, конвертирует в вещественные и принимает их
 {
     Console.Write($"Введите заначение {numName}: ");
     return Convert.ToDouble(Console.ReadLine());

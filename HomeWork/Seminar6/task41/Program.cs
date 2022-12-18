@@ -3,27 +3,45 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-string ReadLine(string message)
-{Console.WriteLine(message);
-return Console.ReadLine()!;
-}
-int[] GetNum(string message)
+Console.WriteLine ("Введите числа через запятую:");
+string numbers = Console.ReadLine()!;
+GetSum(numbers);
+
+void GetSum(string message)
 {
-    int[] arr = new int[message.Length];
-    for(int i = 0; i < message.Length; i++)
+    string[] getNumbers = new string[message.Length];
+    int z = 0;
+    for (int i = 0; i < getNumbers.Length; i++)
     {
-        arr[i] = message[0];
+        if (message[i] == ',')
+        {
+            z++;
+        }
+        else
+        {
+            getNumbers[z] = getNumbers[z] + $"{message[i]}";
+        }
     }
-    return arr;
-}
-void PrintArray(int[] res)
-{
-    for(int i = 0; i < res.Length; i++)
+    z++;
+    int[] convertNumbers = new int[z];
+    Console.Write("[");
+    for (int i = 0; i < convertNumbers.Length; i++)
     {
-        Console.Write($"{res[i]} ");
+        convertNumbers[i] = Convert.ToInt32(getNumbers[i]);
+        if(i < convertNumbers.Length-1)
+        {
+        Console.Write(convertNumbers[i] + ",  ");
+        }
+        else  Console.Write(convertNumbers[i] + "]");
     }
+    int sum = 0;
+    for (int i = 0; i < z; i++)
+    {
+        if (convertNumbers[i] > 0)
+        {
+            sum++;
+        }
+    }
+    Console.WriteLine();
+    Console.WriteLine($"Количество чисел больше 0, введенных с клавиатуры -> {sum}");
 }
-string numbers = ReadLine("Введите любое число");
-// int[] neArr = GetNum(numbers);
-// PrintArray(neArr);
-Console.Write(numbers[1]);

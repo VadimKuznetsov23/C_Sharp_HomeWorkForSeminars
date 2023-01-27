@@ -6,9 +6,9 @@ m = 3, n = 2 -> A(m,n) = 29
 */
 
 Console.WriteLine("Введите начальное число m:");
-int numberM = int.Parse(Console.ReadLine());
+int numberM = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите начальное число n:");
-int numberN = int.Parse(Console.ReadLine());
+int numberN = int.Parse(Console.ReadLine()!);
 int AckermannFunction (int numberM, int numberN)
 {
     if (numberM == 0) return numberN + 1;
